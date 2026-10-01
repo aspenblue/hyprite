@@ -20,14 +20,12 @@ modules:
   - type: dnf
     install:
       packages:
-
         # Noctalia
         - noctalia      
 
         # Noctalia greeter
-        - noctalia-greeter
-      options:
-        - --setopt=install_weak_deps=False
+        - noctalia-greeter      
+      install-weak-deps: false
 
 
   # -----------------------------------------------

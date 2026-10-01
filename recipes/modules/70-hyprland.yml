@@ -20,7 +20,6 @@ modules:
   - type: dnf
     install:
       packages:
-
         # Hyprland
         - hyprland
         - hyprpaper
@@ -33,7 +32,6 @@ modules:
         # Hyprland portals
         # - xdg-desktop-portal          # installed in base-main
         - xdg-desktop-portal-hyprland
-        # - xdg-desktop-portal-gtk      # installed in base-main
-      options:
-        - --setopt=install_weak_deps=False
+        # - xdg-desktop-portal-gtk      # installed in base-main    
+      install-weak-deps: false
   

@@ -10,7 +10,6 @@ modules:
   - type: dnf
     install:
       packages:
-
         # Basic CLI
         - mc
         # - htop                     # installed in base-main
@@ -42,3 +41,4 @@ modules:
         # Fonts
         # - google-noto-fonts-common # installed in base-main
         # - google-noto-emoji-fonts  # installed in base-main
+      install-weak-deps: false  
