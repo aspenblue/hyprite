@@ -19,7 +19,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://repos.fyralabs.com/terra$releasever/terra.repo
+        - https://terra.fyralabs.com/terra.repo
 
 
   # -----------------------------------------------
