@@ -69,6 +69,7 @@ modules:
         - hyprpicker
         - hypridle
         - hyprlock
+        - hyprpolkitagent
 
         # Hyprland portals
         # - xdg-desktop-portal # installed in base-main
@@ -85,7 +86,6 @@ modules:
         # D-Bus / authentication
         # - dbus   # installed in base-main
         # - polkit # installed in base-main
-        #- polkit-gnome
 
         # Audio
         # - pipewire # installed in base-main
@@ -103,7 +103,7 @@ modules:
         # - unzip  # installed in base-main
 
         # Fonts
-        #- google-noto-fonts
+        - google-noto-fonts-common
         # - google-noto-emoji-fonts # installed in base-main
 
 
