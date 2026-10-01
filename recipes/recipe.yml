@@ -67,8 +67,8 @@ modules:
         - hyprland
         - hypridle
         - hyprlock
-        - hyprpaper
-        - hyprpicker
+        #- hyprpaper
+        #- hyprpicker
 
         # Hyprland portals
         # - xdg-desktop-portal # installed in base-main
