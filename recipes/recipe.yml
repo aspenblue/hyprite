@@ -44,24 +44,24 @@ modules:
 
         # Basic CLI
         - mc
-        - htop
+        # - htop   # installed in base-main
         - micro
         - git
-        - curl
-        - wget
-        - rsync
+        # - curl   # installed in base-main
+        # - wget   # installed in base-main
+        # - rsync  # installed in base-main
 
         # Hyprland
-        - hyprland
-        - hypridle
-        - hyprlock
-        - hyprpaper
-        - hyprpicker
+        #- hyprland
+        #- hypridle
+        #- hyprlock
+        #- hyprpaper
+        #- hyprpicker
 
         # Hyprland portals
-        - xdg-desktop-portal
-        - xdg-desktop-portal-hyprland
-        - xdg-desktop-portal-gtk
+        # - xdg-desktop-portal # installed in base-main
+        #- xdg-desktop-portal-hyprland
+        # - xdg-desktop-portal-gtk # installed in base-main
 
         # Login / greeter
         - greetd
@@ -71,28 +71,28 @@ modules:
         - noctalia
 
         # D-Bus / authentication
-        - dbus
-        - polkit
-        - polkit-gnome
+        # - dbus   # installed in base-main
+        # - polkit # installed in base-main
+        #- polkit-gnome
 
         # Audio
-        - pipewire
-        - pipewire-pulseaudio
-        - wireplumber
+        # - pipewire # installed in base-main
+        # - pipewire-pulseaudio # installed in base-main
+        # - wireplumber # installed in base-main
 
         # Network
-        - NetworkManager
+        # - NetworkManager # installed in base-main
 
         # Bluetooth
-        - bluez
+        # - bluez  # installed in base-main
         - bluez-tools
 
         # File/archive utilities
-        - unzip
+        # - unzip  # installed in base-main
 
         # Fonts
-        - google-noto-fonts
-        - google-noto-emoji-fonts
+        #- google-noto-fonts
+        # - google-noto-emoji-fonts # installed in base-main
 
 
   # -----------------------------------------------
