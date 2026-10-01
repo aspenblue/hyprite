@@ -41,3 +41,13 @@ modules:
         # - xdg-desktop-portal          # installed in base-main
         - xdg-desktop-portal-hyprland
         # - xdg-desktop-portal-gtk      # installed in base-main    
+
+
+  # -----------------------------------------------
+  # Hyprland - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: hyprland
+        destination: / 
