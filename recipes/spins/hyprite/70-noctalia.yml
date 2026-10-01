@@ -22,17 +22,5 @@ modules:
       install-weak-deps: false
       packages:
         # Noctalia
-        - noctalia      
+        - noctalia         
 
-        # Noctalia greeter
-        - noctalia-greeter      
-
-
-  # -----------------------------------------------
-  # Noctalia greeter - greetd configuration
-  # -----------------------------------------------
-
-  - type: files
-    files:
-      - source: noctalia
-        destination: /

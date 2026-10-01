@@ -13,6 +13,9 @@ modules:
       packages:
         # Login / greeter
         - greetd
+        
+        # Noctalia greeter
+        - noctalia-greeter
 
 
   # -----------------------------------------------
@@ -23,3 +26,13 @@ modules:
     system:
       enabled:
         - greetd.service
+
+
+  # -----------------------------------------------
+  # Noctalia greeter - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: noctalia-greeter
+        destination: /        

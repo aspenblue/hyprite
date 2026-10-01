@@ -14,3 +14,7 @@ command = "/usr/bin/noctalia-greeter-session"
 # on the greeter. A graphical greeter may for example require the user to be
 # in the `video` group.
 user = "greetd"
+
+[keyboard]
+layout = "us,ru"
+options = "grp:alt_shift_toggle"

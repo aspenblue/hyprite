@@ -12,11 +12,11 @@ image-version: latest
 
 modules:
 
-  - from-file: modules/20-system.yml
-  - from-file: modules/40-greeter.yml
-  - from-file: modules/50-desktop.yml
-  - from-file: modules/70-hyprland.yml
-  - from-file: modules/80-noctalia.yml
+  - from-file: common/20-system.yml
+  - from-file: common/40-desktop.yml
+  - from-file: spins/hyprite/60-hyprland.yml
+  - from-file: spins/hyprite/70-noctalia.yml
+  - from-file: spins/hyprite/80-greeter.yml
 
 
   # -----------------------------------------------

@@ -42,3 +42,12 @@ modules:
         # Fonts
         # - google-noto-fonts-common # installed in base-main
         # - google-noto-emoji-fonts  # installed in base-main
+
+  # -----------------------------------------------
+  # MC - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: mc
+        destination: /  
