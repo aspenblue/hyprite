@@ -12,14 +12,7 @@ image-version: latest
 
 modules:
 
-  # -----------------------------------------------
-  # RPM repositories
-  # -----------------------------------------------
-
-  #- type: dnf
-  #  repos:
-  #    files:
-  #      - https://repos.fyralabs.com/terra%OS_VERSION%/terra.repo
+  - from-file: modules/20-packages.yml
 
   # -----------------------------------------------
   # Repositories
@@ -27,12 +20,13 @@ modules:
 
   - type: dnf
     repos:
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-
       copr:
         - lionheartp/Hyprland
 
+  - type: dnf
+    repos:
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 
   # -----------------------------------------------
   # Terra repository
@@ -54,15 +48,6 @@ modules:
     install:
       packages:
 
-        # Basic CLI
-        - mc
-        # - htop   # installed in base-main
-        - micro
-        - git
-        # - curl   # installed in base-main
-        # - wget   # installed in base-main
-        # - rsync  # installed in base-main
-
         # Hyprland
         - hyprland
         - hyprpaper
@@ -82,30 +67,6 @@ modules:
 
         # Noctalia
         - noctalia
-
-        # D-Bus / authentication
-        # - dbus   # installed in base-main
-        # - polkit # installed in base-main
-
-        # Audio
-        # - pipewire # installed in base-main
-        # - pipewire-pulseaudio # installed in base-main
-        # - wireplumber # installed in base-main
-
-        # Network
-        # - NetworkManager # installed in base-main
-
-        # Bluetooth
-        # - bluez  # installed in base-main
-        - bluez-tools
-
-        # File/archive utilities
-        # - unzip  # installed in base-main
-
-        # Fonts
-        - google-noto-fonts-common
-        # - google-noto-emoji-fonts # installed in base-main
-
 
   # -----------------------------------------------
   # greetd configuration

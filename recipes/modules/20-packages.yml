@@ -1,0 +1,39 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+  - type: dnf
+      install:
+        packages:
+
+          # Basic CLI
+          - mc
+          # - htop                     # installed in base-main
+          - micro
+          - git
+          # - curl                     # installed in base-main
+          # - wget                     # installed in base-main
+          # - rsync                    # installed in base-main
+
+          # D-Bus / authentication
+          # - dbus                     # installed in base-main
+          # - polkit                   # installed in base-main
+
+          # Audio
+          # - pipewire                 # installed in base-main
+          # - pipewire-pulseaudio      # installed in base-main
+          # - wireplumber              # installed in base-main
+
+          # Network
+          # - NetworkManager           # installed in base-main
+
+          # Bluetooth
+          # - bluez                    # installed in base-main
+          - bluez-tools
+
+          # File/archive utilities
+          # - unzip                    # installed in base-main
+
+          # Fonts
+          # - google-noto-fonts-common # installed in base-main
+          # - google-noto-emoji-fonts  # installed in base-main
