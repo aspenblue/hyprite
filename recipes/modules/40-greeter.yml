@@ -9,10 +9,10 @@ modules:
 
   - type: dnf
     install:
+      install-weak-deps: false
       packages:
         # Login / greeter
         - greetd
-      install-weak-deps: false
 
 
   # -----------------------------------------------

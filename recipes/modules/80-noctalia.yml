@@ -19,13 +19,13 @@ modules:
 
   - type: dnf
     install:
+      install-weak-deps: false
       packages:
         # Noctalia
         - noctalia      
 
         # Noctalia greeter
         - noctalia-greeter      
-      install-weak-deps: false
 
 
   # -----------------------------------------------
