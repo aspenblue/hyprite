@@ -16,11 +16,23 @@ modules:
   # RPM repositories
   # -----------------------------------------------
 
-  - type: dnf
-    repos:
-      files:
-        - https://terra.fyralabs.com/terra.repo
+  #- type: dnf
+  #  repos:
+  #    files:
+  #      - https://repos.fyralabs.com/terra%OS_VERSION%/terra.repo
 
+
+  # -----------------------------------------------
+  # Terra repository
+  # -----------------------------------------------
+
+  - type: script
+    snippets:
+      - |
+        curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo \
+          -o /etc/yum.repos.d/terra.repo
+
+        dnf5 install -y terra-release
 
   # -----------------------------------------------
   # System packages
