@@ -86,18 +86,6 @@ modules:
 
 
   # -----------------------------------------------
-  # Flatpak / Flathub
-  # -----------------------------------------------
-
-  - type: default-flatpaks
-    notify: true
-
-    system:
-      - org.gnome.Platform
-      - io.github.kolunmi.Bazaar
-
-
-  # -----------------------------------------------
   # greetd configuration
   # -----------------------------------------------
 
