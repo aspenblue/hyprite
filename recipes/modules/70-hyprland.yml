@@ -14,57 +14,6 @@ modules:
 
 
   # -----------------------------------------------
-  # Diagnostics
-  # -----------------------------------------------
-
-  - type: script
-    snippets:
-      - |
-        set -eux
-
-        echo "========================================"
-        echo "DNF repositories"
-        echo "========================================"
-        dnf5 repolist
-
-        echo
-        echo "========================================"
-        echo "Hyprland package"
-        echo "========================================"
-        dnf5 repoquery --info hyprland || true
-
-        echo
-        echo "========================================"
-        echo "Hyprland Requires"
-        echo "========================================"
-        dnf5 repoquery --requires hyprland || true
-
-        echo
-        echo "========================================"
-        echo "Hyprland Recommends"
-        echo "========================================"
-        dnf5 repoquery --recommends hyprland || true
-
-        echo
-        echo "========================================"
-        echo "Hyprland Suggests"
-        echo "========================================"
-        dnf5 repoquery --suggests hyprland || true
-
-        echo
-        echo "========================================"
-        echo "Anything requiring Kitty"
-        echo "========================================"
-        dnf5 repoquery --whatrequires kitty || true
-
-        echo
-        echo "========================================"
-        echo "Kitty package"
-        echo "========================================"
-        dnf5 repoquery --info kitty || true
-
-
-  # -----------------------------------------------
   # Hyprland packages
   # -----------------------------------------------
 
@@ -80,6 +29,13 @@ modules:
         - hyprlock
         - hyprpolkitagent
         - hyprland-guiutils
+
+        # Hyprland support components
+        - brightnessctl
+        - playerctl
+
+        # UWSM
+        - hyprland-uwsm
 
         # Hyprland portals
         # - xdg-desktop-portal          # installed in base-main
