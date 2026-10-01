@@ -21,18 +21,30 @@ modules:
   #    files:
   #      - https://repos.fyralabs.com/terra%OS_VERSION%/terra.repo
 
+  # -----------------------------------------------
+  # Repositories
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+
+      copr:
+        - mpapacc/hyprland
+
 
   # -----------------------------------------------
   # Terra repository
   # -----------------------------------------------
 
-  - type: script
-    snippets:
-      - |
-        curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo \
-          -o /etc/yum.repos.d/terra.repo
-
-        dnf5 install -y terra-release
+  #- type: script
+  #  snippets:
+  #    - |
+  #      curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo \
+  #        -o /etc/yum.repos.d/terra.repo#
+  #
+  #      dnf5 install -y terra-release
 
   # -----------------------------------------------
   # System packages
@@ -52,15 +64,15 @@ modules:
         # - rsync  # installed in base-main
 
         # Hyprland
-        #- hyprland
-        #- hypridle
-        #- hyprlock
-        #- hyprpaper
-        #- hyprpicker
+        - hyprland
+        - hypridle
+        - hyprlock
+        - hyprpaper
+        - hyprpicker
 
         # Hyprland portals
         # - xdg-desktop-portal # installed in base-main
-        #- xdg-desktop-portal-hyprland
+        - xdg-desktop-portal-hyprland
         # - xdg-desktop-portal-gtk # installed in base-main
 
         # Login / greeter
