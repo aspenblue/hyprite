@@ -29,10 +29,10 @@ modules:
 
 
   # -----------------------------------------------
-  # greetd configuration
+  # Noctalia greeter - greetd configuration
   # -----------------------------------------------
 
-#  - type: files
-#    files:
-#      - source: system
-#        destination: /
+  - type: files
+    files:
+      - source: noctalia
+        destination: /
