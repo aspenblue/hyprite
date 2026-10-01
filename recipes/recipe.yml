@@ -1,0 +1,124 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+version: 1
+
+name: hyprite
+
+description: >
+  Personal Fedora Atomic image based on Universal Blue,
+  with Hyprland, Noctalia and Noctalia Greeter.
+
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest
+
+modules:
+
+  # -----------------------------------------------
+  # RPM repositories
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      files:
+        - https://repos.fyralabs.com/terra$releasever/terra.repo
+
+
+  # -----------------------------------------------
+  # System packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      packages:
+
+        # Basic CLI
+        - mc
+        - htop
+        - micro
+        - git
+        - curl
+        - wget
+        - rsync
+
+        # Hyprland
+        - hyprland
+        - hypridle
+        - hyprlock
+        - hyprpaper
+        - hyprpicker
+
+        # Hyprland portals
+        - xdg-desktop-portal
+        - xdg-desktop-portal-hyprland
+        - xdg-desktop-portal-gtk
+
+        # Login / greeter
+        - greetd
+        - noctalia-greeter
+
+        # Noctalia
+        - noctalia
+
+        # D-Bus / authentication
+        - dbus
+        - polkit
+        - polkit-gnome
+
+        # Audio
+        - pipewire
+        - pipewire-pulseaudio
+        - wireplumber
+
+        # Network
+        - NetworkManager
+
+        # Bluetooth
+        - bluez
+        - bluez-tools
+
+        # File/archive utilities
+        - unzip
+
+        # Fonts
+        - google-noto-fonts
+        - google-noto-emoji-fonts
+
+
+  # -----------------------------------------------
+  # Flatpak / Flathub
+  # -----------------------------------------------
+
+  - type: default-flatpaks
+    notify: true
+
+    system:
+      - org.gnome.Platform
+      - io.github.kolunmi.Bazaar
+
+
+  # -----------------------------------------------
+  # greetd configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+
+  # -----------------------------------------------
+  # Enable greetd
+  # -----------------------------------------------
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
+
+
+  # -----------------------------------------------
+  # Sign image
+  # -----------------------------------------------
+
+  - type: signing

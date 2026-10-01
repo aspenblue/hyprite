@@ -1,0 +1,36 @@
+name: Build Hyprite
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+
+  build:
+    name: Build image
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build image
+        uses: blue-build/github-action@v1
+        with:
+          recipe: recipe.yml
+          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          maximize_build_space: true
