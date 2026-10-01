@@ -65,10 +65,10 @@ modules:
 
         # Hyprland
         - hyprland
+        - hyprpaper
+        - hyprpicker
         - hypridle
         - hyprlock
-        #- hyprpaper
-        #- hyprpicker
 
         # Hyprland portals
         # - xdg-desktop-portal # installed in base-main
