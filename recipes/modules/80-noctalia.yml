@@ -1,0 +1,38 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # Terra repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo  
+
+
+  # -----------------------------------------------
+  # Noctalia packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      packages:
+
+        # Noctalia
+        - noctalia      
+
+        # Noctalia greeter
+        - noctalia-greeter
+
+
+  # -----------------------------------------------
+  # greetd configuration
+  # -----------------------------------------------
+
+#  - type: files
+#    files:
+#      - source: system
+#        destination: /

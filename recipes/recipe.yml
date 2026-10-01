@@ -13,79 +13,9 @@ image-version: latest
 modules:
 
   - from-file: modules/20-packages.yml
-
-  # -----------------------------------------------
-  # Repositories
-  # -----------------------------------------------
-
-  - type: dnf
-    repos:
-      copr:
-        - lionheartp/Hyprland
-
-  - type: dnf
-    repos:
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-
-  # -----------------------------------------------
-  # Terra repository
-  # -----------------------------------------------
-
-  #- type: script
-  #  snippets:
-  #    - |
-  #      curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo \
-  #        -o /etc/yum.repos.d/terra.repo#
-  #
-  #      dnf5 install -y terra-release
-
-  # -----------------------------------------------
-  # System packages
-  # -----------------------------------------------
-
-  - type: dnf
-    install:
-      packages:
-
-        # Hyprland
-        - hyprland
-        - hyprpaper
-        - hyprpicker
-        - hypridle
-        - hyprlock
-        - hyprpolkitagent
-
-        # Hyprland portals
-        # - xdg-desktop-portal # installed in base-main
-        - xdg-desktop-portal-hyprland
-        # - xdg-desktop-portal-gtk # installed in base-main
-
-        # Login / greeter
-        - greetd
-        - noctalia-greeter
-
-        # Noctalia
-        - noctalia
-
-  # -----------------------------------------------
-  # greetd configuration
-  # -----------------------------------------------
-
-  - type: files
-    files:
-      - source: system
-        destination: /
-
-
-  # -----------------------------------------------
-  # Enable greetd
-  # -----------------------------------------------
-
-  - type: systemd
-    system:
-      enabled:
-        - greetd.service
+  - from-file: modules/50-greeter.yml
+  - from-file: modules/70-hyprland.yml
+  - from-file: modules/80-noctalia.yml
 
 
   # -----------------------------------------------

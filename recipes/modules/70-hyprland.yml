@@ -1,0 +1,36 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # Hyprland repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - lionheartp/Hyprland
+
+
+  # -----------------------------------------------
+  # Hyprland packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      packages:
+
+        # Hyprland
+        - hyprland
+        - hyprpaper
+        - hyprpicker
+        - hypridle
+        - hyprlock
+        - hyprpolkitagent
+
+        # Hyprland portals
+        # - xdg-desktop-portal          # installed in base-main
+        - xdg-desktop-portal-hyprland
+        # - xdg-desktop-portal-gtk      # installed in base-main
+  

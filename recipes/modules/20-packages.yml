@@ -2,6 +2,11 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 
 modules:
+
+  # -----------------------------------------------
+  # System packages
+  # -----------------------------------------------
+
   - type: dnf
     install:
       packages:
