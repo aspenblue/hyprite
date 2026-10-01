@@ -5,7 +5,7 @@ version: 1
 
 name: hyprite
 
-description: "Personal Fedora Atomic image based on Universal Blue, with Hyprland, Noctalia and Noctalia Greeter.
+description: "Personal Fedora Atomic image based on Universal Blue, with Hyprland, Noctalia and Noctalia Greeter."
 
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest
