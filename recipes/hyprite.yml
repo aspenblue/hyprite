@@ -16,7 +16,7 @@ modules:
   - from-file: common/40-desktop.yml
   - from-file: spins/hyprite/60-hyprland.yml
   - from-file: spins/hyprite/70-noctalia.yml
-  - from-file: spins/hyprite/80-greeter.yml
+  - from-file: spins/hyprite/80-noctalia-greeter.yml
 
 
   # -----------------------------------------------
