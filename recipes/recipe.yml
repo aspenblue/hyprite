@@ -12,8 +12,9 @@ image-version: latest
 
 modules:
 
-  - from-file: modules/20-packages.yml
-  - from-file: modules/50-greeter.yml
+  - from-file: modules/20-system.yml
+  - from-file: modules/40-greeter.yml
+  - from-file: modules/50-desktop.yml
   - from-file: modules/70-hyprland.yml
   - from-file: modules/80-noctalia.yml
 

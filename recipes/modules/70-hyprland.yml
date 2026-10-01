@@ -28,9 +28,12 @@ modules:
         - hypridle
         - hyprlock
         - hyprpolkitagent
+        - hyprland-guiutils
 
         # Hyprland portals
         # - xdg-desktop-portal          # installed in base-main
         - xdg-desktop-portal-hyprland
         # - xdg-desktop-portal-gtk      # installed in base-main
+      options:
+        - --setopt=install_weak_deps=False
   

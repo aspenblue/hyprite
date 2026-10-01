@@ -1,0 +1,16 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # Desktop packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      packages:
+        - foot
+      options:
+        - --setopt=install_weak_deps=False
+  

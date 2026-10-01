@@ -26,6 +26,8 @@ modules:
 
         # Noctalia greeter
         - noctalia-greeter
+      options:
+        - --setopt=install_weak_deps=False
 
 
   # -----------------------------------------------

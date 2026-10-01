@@ -12,6 +12,8 @@ modules:
       packages:
         # Login / greeter
         - greetd
+      options:
+        - --setopt=install_weak_deps=False
 
 
   # -----------------------------------------------
