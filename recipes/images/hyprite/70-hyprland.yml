@@ -33,6 +33,7 @@ modules:
         # Hyprland support components
         - brightnessctl
         - playerctl
+        - foot
 
         # UWSM
         - hyprland-uwsm
