@@ -24,3 +24,11 @@ modules:
         # Noctalia
         - noctalia         
 
+  # -----------------------------------------------
+  # Noctalia - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: noctalia
+        destination: /  
