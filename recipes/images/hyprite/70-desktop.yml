@@ -23,6 +23,7 @@ modules:
       packages:
         - thunar
         - webapp-manager
+        - gparted
       
 
   # -----------------------------------------------
@@ -34,5 +35,29 @@ modules:
       - notify: true
         scope: system
         install:
+
+          # Basic
+          - org.gnome.Calculator
+          - org.gnome.Calendar
+          - org.gnome.Papers
+          - org.gnome.clocks
+
+          # Media
+          - org.gnome.Showtime
+          - org.gnome.Loupe
+          - org.gnome.Snapshot
+          - io.bassi.Amberol
+
+          # Web
           - org.mozilla.firefox
-          - io.github.kolunmi.Bazaar  
+          - com.getmailspring.Mailspring
+
+          # Apps
+          - io.github.kolunmi.Bazaar
+          
+          # Tools
+          - org.gnome.Connections
+          - org.gnome.Characters
+          - org.gnome.FileRoller
+          - org.gnome.font-viewer
+          - io.gitlab.adhami3310.Impression
