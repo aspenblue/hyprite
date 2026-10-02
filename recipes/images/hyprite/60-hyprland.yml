@@ -61,7 +61,3 @@ modules:
   - type: script
     scripts:
       - upgrade-user-config.sh
-    args:
-      - ".config/hypr/hyprland.bak"
-      - ".config/hypr/hyprland.lua"
-      - "/etc/skel/.config/hypr/hyprland.lua"

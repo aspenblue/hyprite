@@ -42,7 +42,3 @@ modules:
   - type: script
     scripts:
       - upgrade-user-config.sh
-    args:
-      - ".config/noctalia/config.bak"
-      - ".config/noctalia/config.toml"
-      - "/etc/skel/.config/noctalia/config.toml"

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OLD_BACKUP="$1"
-OLD_CONFIG="$2"
-NEW_CONFIG="$3"
+OLD_BACKUP=".config/hypr/hyprland.bak"
+OLD_CONFIG=".config/hypr/hyprland.lua"
+NEW_CONFIG="/etc/skel/.config/hypr/hyprland.lua"
 
 for DIR in /home/*/; do
     # skip if not folder
