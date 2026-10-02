@@ -10,9 +10,10 @@ modules:
   modules:
   - type: dnf
     remove:
-      - vim-data
-      - vim-minimal
-      - vim-filesystem
-      - vim-common
-      - vim-enhanced
-      - xxd
+      packages:
+        - vim-data
+        - vim-minimal
+        - vim-filesystem
+        - vim-common
+        - vim-enhanced
+        - xxd
