@@ -57,7 +57,6 @@ modules:
   # Hyprland - reset configuration
   # -----------------------------------------------
 
-  modules:
   - type: script
     scripts:
       - upgrade-user-config.sh
