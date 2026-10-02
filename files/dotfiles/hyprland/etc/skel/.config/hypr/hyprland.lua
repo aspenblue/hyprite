@@ -6,4 +6,4 @@
 -- Create your files separately and then require them like this:
 -- require("myColors.lua")
 
-source("/etc/hypr/config.lua")
+require("/etc/hypr/config.lua")

@@ -24,6 +24,7 @@ modules:
         - thunar
         - webapp-manager
         - gparted
+        - btrfs-assistant
       
 
   # -----------------------------------------------
@@ -39,7 +40,6 @@ modules:
           # Basic
           - org.gnome.Calculator
           - org.gnome.Calendar
-          - org.gnome.Papers
           - org.gnome.clocks
 
           # Media
@@ -47,6 +47,10 @@ modules:
           - org.gnome.Loupe
           - org.gnome.Snapshot
           - io.bassi.Amberol
+
+          # Office
+          - org.gnome.Papers
+          - org.onlyoffice.desktopeditors
 
           # Web
           - org.mozilla.firefox

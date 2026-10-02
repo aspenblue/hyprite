@@ -43,11 +43,14 @@ modules:
         # - google-noto-fonts-common # installed in base-main
         # - google-noto-emoji-fonts  # installed in base-main
 
+        # btrfs
+        - snapper
+
   # -----------------------------------------------
   # MC - configuration
   # -----------------------------------------------
 
   - type: files
     files:
-      - source: mc
+      - source: dotfiles/mc
         destination: /  

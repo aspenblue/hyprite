@@ -23,7 +23,6 @@ modules:
       packages:
         # Hyprland
         - hyprland
-        - hyprpaper
         - hyprpicker
         - hypridle
         - hyprlock
@@ -50,5 +49,19 @@ modules:
 
   - type: files
     files:
-      - source: hyprland
-        destination: / 
+      - source: dotfiles/hyprland
+        destination: /
+
+
+  # -----------------------------------------------
+  # Hyprland - reset configuration
+  # -----------------------------------------------
+
+  modules:
+  - type: script
+    scripts:
+      - upgrade-user-config.sh
+    args:
+      - ".config/hypr/hyprland.bak"
+      - ".config/hypr/hyprland.lua"
+      - "/etc/skel/.config/hypr/hyprland.lua"
