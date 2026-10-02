@@ -8,7 +8,7 @@ modules:
   # -----------------------------------------------
 
   modules:
-  - type: rpm-ostree
+  - type: dnf
     remove:
       - vim-data
       - vim-minimal
