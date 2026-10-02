@@ -4,6 +4,16 @@
 modules:
 
   # -----------------------------------------------
+  # WebApp-manager repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - refi64/webapp-manager
+
+
+  # -----------------------------------------------
   # Desktop packages
   # -----------------------------------------------
 
@@ -12,11 +22,16 @@ modules:
       install-weak-deps: false
       packages:
         - thunar
-        - bazaar
+        - webapp-manager
       
+      
+  # -----------------------------------------------
+  # Desktop flatpaks
+  # -----------------------------------------------      
 
   - type: default-flatpaks
     notify: true
     system:
       install:
-        - org.mozilla.firefox     
+        - org.mozilla.firefox
+        - io.github.kolunmi.Bazaar   
