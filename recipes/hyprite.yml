@@ -13,9 +13,11 @@ image-version: latest
 modules:
 
   - from-file: common/30-apps.yml
-  - from-file: images/hyprite/70-hyprland.yml
-  - from-file: images/hyprite/71-noctalia.yml
-  - from-file: images/hyprite/72-noctaliagreeter.yml
+  - from-file: images/hyprite/60-hyprland.yml
+  - from-file: images/hyprite/61-noctalia.yml
+  - from-file: images/hyprite/62-noctaliagreeter.yml
+  - from-file: common/70-desktop.yml  
+  - from-file: common/80-cleanup.yml
 
 
   # -----------------------------------------------

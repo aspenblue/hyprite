@@ -1,0 +1,22 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # Desktop packages
+  # -----------------------------------------------
+
+  - type: rpm-ostree
+    install:
+      install-weak-deps: false
+      packages:
+        - thunar
+        - bazaar
+      
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        - org.mozilla.firefox     

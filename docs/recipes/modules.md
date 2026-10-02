@@ -4,7 +4,7 @@ Standart modules order:
 - 30 - basic apps
 - 40 - *reserved*
 - 50 - services
-- 60 - *reserved*
-- 70 - desktop enviroment
-- 80 - desktop apps
+- 60 - desktop enviroment
+- 70 - desktop apps
+- 80 - cleanup
 - 90 - *reserved*
