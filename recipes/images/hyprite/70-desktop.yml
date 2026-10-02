@@ -24,14 +24,15 @@ modules:
         - thunar
         - webapp-manager
       
-      
+
   # -----------------------------------------------
   # Desktop flatpaks
   # -----------------------------------------------      
 
   - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - org.mozilla.firefox
-        - io.github.kolunmi.Bazaar   
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - org.mozilla.firefox
+          - io.github.kolunmi.Bazaar  
