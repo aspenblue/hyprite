@@ -7,7 +7,6 @@ modules:
   # Remove unneccessary packages
   # -----------------------------------------------
 
-  modules:
   - type: dnf
     remove:
       packages:
