@@ -40,4 +40,4 @@ modules:
 
   - type: script
     scripts:
-      - upgrade-user-config.sh
+      - noctalia-user-config.sh

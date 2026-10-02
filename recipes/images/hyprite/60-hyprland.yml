@@ -59,4 +59,4 @@ modules:
 
   - type: script
     scripts:
-      - upgrade-user-config.sh
+      - hyprland-user-config.sh
