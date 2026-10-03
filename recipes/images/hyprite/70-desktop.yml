@@ -46,7 +46,7 @@ modules:
         - gnome-font-viewer         # Шрифты
         - gnome-connections         # RDP
         - gnome-disk-utility        # Разметка дисков
-        - gnome-disk-usage-analyzer # Использование диска         
+        - baobab                    # Использование диска         
         - btrfs-assistant           # Snapper
       
 
@@ -59,6 +59,10 @@ modules:
       - notify: true
         scope: system
         install:
+
+          # Media
+          - org.gnome.Snapshot
+          - io.bassi.Amberol
 
           # Office
           - org.onlyoffice.desktopeditors # Офис
