@@ -52,5 +52,5 @@ modules:
 
   - type: files
     files:
-      - source: mc
+      - source: rootfs/mc
         destination: /  

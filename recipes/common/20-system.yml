@@ -9,9 +9,9 @@ modules:
 
   - type: files
     files:
-      - source: system
+      - source: rootfs/system
         destination: /
 
   - type: script
     scripts:
-      - chmod +x /usr/bin/ublue-*.sh
+      - system-chmod-ublue.sh

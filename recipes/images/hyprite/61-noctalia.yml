@@ -30,7 +30,7 @@ modules:
 
   - type: files
     files:
-      - source: noctalia
+      - source: rootfs/noctalia
         destination: /
 
   # -----------------------------------------------
@@ -39,4 +39,4 @@ modules:
 
   - type: script
     scripts:
-      - noctalia msg plugins enable nzlov/daily-wallpaper
+      - noctalia-enable-plugins.sh
