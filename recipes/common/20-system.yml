@@ -14,4 +14,4 @@ modules:
 
   - type: script
     scripts:
-      - chmod +x /usr/local/bin/ublue-*.sh
+      - chmod +x /usr/bin/ublue-*.sh
