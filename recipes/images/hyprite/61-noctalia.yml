@@ -30,14 +30,13 @@ modules:
 
   - type: files
     files:
-      - source: dotfiles/noctalia
-        destination: /  
+      - source: noctalia
+        destination: /
 
-  
   # -----------------------------------------------
-  # Noctalia - reset configuration
+  # Noctalia - plugins
   # -----------------------------------------------
 
   - type: script
     scripts:
-      - noctalia-user-config.sh
+      - noctalia msg plugins enable nzlov/daily-wallpaper

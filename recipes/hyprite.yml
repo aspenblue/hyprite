@@ -12,6 +12,7 @@ image-version: latest
 
 modules:
 
+  - from-file: common/20-system.yml
   - from-file: common/30-apps.yml
   - from-file: images/hyprite/60-hyprland.yml
   - from-file: images/hyprite/61-noctalia.yml

@@ -21,10 +21,33 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - thunar
-        - webapp-manager
-        - gparted
-        - btrfs-assistant
+
+        # Basic
+        - nautilus                  # Файлы
+        - file-roller               # Архивы
+        - gnome-calculator          # Калькулятор
+        - gnome-text-editor         # Блокнот
+        - gnome-clocks              # Часы и будильник
+
+        # Media
+        - loupe                     # Изображения
+        - showtime                  # Видео
+        - gnome-snapshot            # Камера
+        - amberol                   # Музыка
+
+        # Office
+        - papers                    # PDF, DJVu
+
+        # Web
+        - webapp-manager            # Веб-приложения
+
+        # Tools
+        - gnome-characters          # Символы
+        - gnome-font-viewer         # Шрифты
+        - gnome-connections         # RDP
+        - gnome-disk-utility        # Разметка дисков
+        - gnome-disk-usage-analyzer # Использование диска         
+        - btrfs-assistant           # Snapper
       
 
   # -----------------------------------------------
@@ -37,31 +60,12 @@ modules:
         scope: system
         install:
 
-          # Basic
-          - org.gnome.Calculator
-          - org.gnome.Calendar
-          - org.gnome.clocks
-
-          # Media
-          - org.gnome.Showtime
-          - org.gnome.Loupe
-          - org.gnome.Snapshot
-          - io.bassi.Amberol
-
           # Office
-          - org.gnome.Papers
-          - org.onlyoffice.desktopeditors
+          - org.onlyoffice.desktopeditors # Офис
 
           # Web
-          - org.mozilla.firefox
-          - com.getmailspring.Mailspring
+          - org.mozilla.firefox           # Браузер
+          - com.getmailspring.Mailspring  # Почта
 
           # Apps
-          - io.github.kolunmi.Bazaar
-          
-          # Tools
-          - org.gnome.Connections
-          - org.gnome.Characters
-          - org.gnome.FileRoller
-          - org.gnome.font-viewer
-          - io.gitlab.adhami3310.Impression
+          - io.github.kolunmi.Bazaar      # Магазин приложений

@@ -52,5 +52,5 @@ modules:
 
   - type: files
     files:
-      - source: dotfiles/mc
+      - source: mc
         destination: /  

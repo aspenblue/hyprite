@@ -1,0 +1,21 @@
+[control_center]
+sidebar = "full"
+sidebar_section = "none"  # optional; defaults to the same as sidebar
+# width = 700                 # full-sidebar width in pixels (600–1200)
+# show_shortcut_labels = true # text under Home shortcut icons
+# show_session_button = true  # session-actions button in the Home header
+hidden_tabs = ["media", "calendar", "notifications", "weather"]  # hide tabs you never use
+
+
+[location]
+#auto_locate = false            # resolve coordinates from your IP address when true
+address     = "Moscow, Russia" # geocoded when auto_locate = false and non-empty
+# latitude  = 55.7520          # manual coordinates, used when auto_locate and address are off
+# longitude = 37.6178
+
+
+[weather]
+enabled         = false
+#refresh_minutes = 30
+#unit            = "metric"      # metric | imperial
+#effects         = true          # visual weather effects

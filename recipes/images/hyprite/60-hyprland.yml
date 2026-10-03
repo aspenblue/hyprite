@@ -49,14 +49,5 @@ modules:
 
   - type: files
     files:
-      - source: dotfiles/hyprland
+      - source: hyprland
         destination: /
-
-
-  # -----------------------------------------------
-  # Hyprland - reset configuration
-  # -----------------------------------------------
-
-  - type: script
-    scripts:
-      - hyprland-user-config.sh
