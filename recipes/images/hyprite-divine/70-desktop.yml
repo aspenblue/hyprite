@@ -32,6 +32,8 @@ modules:
         # Media
         - loupe                     # Изображения
         - showtime                  # Видео
+        - gnome-snapshot            # Камера
+        - amberol                   # Музыка
 
         # Office
         - papers                    # PDF, DJVu
@@ -59,8 +61,8 @@ modules:
         install:
 
           # Media
-          - org.gnome.Snapshot            # Камера
-          - io.bassi.Amberol              # Музыка
+          - org.gnome.Snapshot
+          - io.bassi.Amberol
 
           # Office
           - org.onlyoffice.desktopeditors # Офис
