@@ -32,11 +32,3 @@ modules:
     files:
       - source: rootfs/noctalia
         destination: /
-
-  # -----------------------------------------------
-  # Noctalia - plugins
-  # -----------------------------------------------
-
-  - type: script
-    scripts:
-      - noctalia-enable-plugins.sh
