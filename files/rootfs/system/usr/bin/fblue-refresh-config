@@ -16,4 +16,4 @@ if [[ -d "$OLD_CONFIG" ]]; then
 fi
 
 # set new config
-cp "$NEW_CONFIG" "$OLD_CONFIG"
+cp -R "$NEW_CONFIG" "$OLD_CONFIG"
