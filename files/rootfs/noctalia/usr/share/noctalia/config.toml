@@ -19,3 +19,11 @@ enabled         = false
 #refresh_minutes = 30
 #unit            = "metric"      # metric | imperial
 #effects         = true          # visual weather effects
+
+[include]
+files = [
+    "/usr/share/noctalia/config/shell.toml",
+    "/usr/share/noctalia/config/bar.toml",
+    "/usr/share/noctalia/config/dock.toml",
+    "/usr/share/noctalia/config/theme.toml",
+]

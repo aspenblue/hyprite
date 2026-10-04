@@ -22,35 +22,13 @@ modules:
       install-weak-deps: false
       packages:
 
-        # Basic
-        - nautilus                  # Файлы
-        - file-roller               # Архивы
-        - gnome-calculator          # Калькулятор
-        - gnome-text-editor         # Блокнот
-        - gnome-clocks              # Часы и будильник
-
-        # Media
-        - loupe                     # Изображения
-        - showtime                  # Видео
-
-        # Office
-        - papers                    # PDF, DJVu
-
-        # Web
-        - webapp-manager            # Веб-приложения
-
-        # Tools
-        - gnome-characters          # Символы
-        - gnome-font-viewer         # Шрифты
-        - gnome-connections         # RDP
-        - gnome-disk-utility        # Разметка дисков
-        - baobab                    # Использование диска         
+        # Tools      
         - btrfs-assistant           # Snapper
       
 
   # -----------------------------------------------
   # Desktop flatpaks
-  # -----------------------------------------------      
+  # -----------------------------------------------
 
   - type: default-flatpaks
     configurations:
@@ -58,16 +36,34 @@ modules:
         scope: system
         install:
 
+          # Basic
+          - org.gnome.Nautilus            # Файлы
+          - org.gnome.FileRoller          # Архивы
+          - org.gnome.Calculator          # Калькулятор
+          - org.gnome.TextEditor          # Блокнот
+          - org.gnome.clocks              # Часы и будильник
+
           # Media
-          - org.gnome.Snapshot            # Камера
           - io.bassi.Amberol              # Музыка
+          - org.gnome.Loupe               # Изображения
+          - org.gnome.Showtime            # Видео
+          - org.gnome.Snapshot            # Камера
 
           # Office
+          - org.gnome.Papers              # PDF, DJVu
           - org.onlyoffice.desktopeditors # Офис
 
           # Web
           - org.mozilla.firefox           # Браузер
           - com.getmailspring.Mailspring  # Почта
+          - org.pvermeer.WebAppHub        # Веб-приложения
 
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
+
+          # Tools
+          - org.gnome.Characters          # Символы
+          - org.gnome.font-viewer         # Шрифты
+          - org.gnome.Connections         # RDP
+          - org.gnome.DiskUtility         # Разметка дисков
+          - org.gnome.baobab              # Использование диска   

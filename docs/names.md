@@ -1,10 +1,12 @@
 Images
 
-- Basite
-- Dockerite
-- Snaperite
+- Corite - base image
+- Iolite - server
+    - Idolite - docker
+    - Isolite - snap
+    - Ipolite - podman
 - Hyprite - hyprland 
 - Lewisite - labwc
-- Painite - pantheon
+- Pyrite - pantheon
 - Nephrite - niri
 - Anthracite

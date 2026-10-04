@@ -1,0 +1,74 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # WebApp-manager repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - refi64/webapp-manager
+
+
+  # -----------------------------------------------
+  # Desktop packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+
+        # Basic
+        - nautilus                  # Файлы
+        - file-roller               # Архивы
+        - gnome-calculator          # Калькулятор
+        - gnome-calendar            # Календарь
+        - gnome-text-editor         # Блокнот
+        - gnome-clocks              # Часы и будильник
+
+        # Media
+        - loupe                     # Изображения
+        - showtime                  # Видео
+        - snapshot                  # Камера
+
+        # Office
+        - papers                    # PDF, DJVu
+
+        # Web
+        - webapp-manager            # Веб-приложения
+        - firefox                   # Браузер
+
+        # Tools
+        - gnome-characters          # Символы
+        - gnome-font-viewer         # Шрифты
+        - gnome-connections         # RDP
+        - gnome-disk-utility        # Разметка дисков
+        - baobab                    # Использование диска         
+        - btrfs-assistant           # Snapper
+      
+
+  # -----------------------------------------------
+  # Desktop flatpaks
+  # -----------------------------------------------      
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+
+          # Media
+          - io.bassi.Amberol              # Музыка
+
+          # Office
+          - org.onlyoffice.desktopeditors # Офис
+
+          # Web
+          - com.getmailspring.Mailspring  # Почта
+
+          # Apps
+          - io.github.kolunmi.Bazaar      # Магазин приложений

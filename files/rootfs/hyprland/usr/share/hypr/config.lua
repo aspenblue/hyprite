@@ -350,8 +350,8 @@ hl.window_rule({
 })
 
 
--------------------
------- CONF.D -----
--------------------
+------------------
+---- CONFIG.D ----
+------------------
 
-require("/etc/hypr/conf.d/*.lua")
+require("/usr/share/hypr/config.d/*.lua")

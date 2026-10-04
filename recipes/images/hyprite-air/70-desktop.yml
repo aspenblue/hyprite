@@ -23,30 +23,30 @@ modules:
       packages:
 
         # Basic
-        - nautilus                  # Файлы
-        - file-roller               # Архивы
-        - gnome-calculator          # Калькулятор
-        - gnome-text-editor         # Блокнот
-        - gnome-clocks              # Часы и будильник
+        - elementary-files          # Файлы
+        # -                           # Архивы
+        - elementary-calculator     # Калькулятор
+        - elementary-calendar       # Календарь
+        - elementary-code           # Блокнот
+        # -                         # Часы и будильник
 
         # Media
-        - loupe                     # Изображения
-        - showtime                  # Видео
-        - gnome-snapshot            # Камера
-        - amberol                   # Музыка
+        - elementary-photos         # Изображения
+        - elementary-videos         # Видео
+        - elementary-camera         # Камера
 
         # Office
-        - papers                    # PDF, DJVu
+        # -                           # PDF, DJVu
 
         # Web
         - webapp-manager            # Веб-приложения
 
         # Tools
-        - gnome-characters          # Символы
-        - gnome-font-viewer         # Шрифты
-        - gnome-connections         # RDP
-        - gnome-disk-utility        # Разметка дисков
-        - baobab                    # Использование диска         
+        - gucharmap                 # Символы
+        - elementary-fonts          # Шрифты
+        # -                           # RDP
+        - gparted                   # Разметка дисков
+        # -                           # Использование диска         
         - btrfs-assistant           # Snapper
       
 
@@ -61,8 +61,7 @@ modules:
         install:
 
           # Media
-          - org.gnome.Snapshot
-          - io.bassi.Amberol
+          - io.bassi.Amberol              # Музыка
 
           # Office
           - org.onlyoffice.desktopeditors # Офис

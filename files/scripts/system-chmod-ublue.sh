@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-chmod +x /usr/bin/ublue-*.sh
+chmod +x /usr/bin/fblue-*
