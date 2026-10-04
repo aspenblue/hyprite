@@ -22,7 +22,8 @@ modules:
       install-weak-deps: false
       packages:
 
-        # Tools      
+        # Tools
+        - gnome-disk-utility        # Разметка дисков
         - btrfs-assistant           # Snapper
       
 
@@ -65,5 +66,4 @@ modules:
           - org.gnome.Characters          # Символы
           - org.gnome.font-viewer         # Шрифты
           - org.gnome.Connections         # RDP
-          - org.gnome.DiskUtility         # Разметка дисков
           - org.gnome.baobab              # Использование диска   
