@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OLD_BACKUP="~/.config.bak"
-OLD_CONFIG="~/.config"
+OLD_BACKUP="$HOME/.config.bak"
+OLD_CONFIG="$HOME/.config"
 NEW_CONFIG="/etc/skel/.config"
 
 # delete backup if exists
@@ -12,8 +12,8 @@ fi
 
 # move old config to backup if exists
 if [[ -d "$OLD_CONFIG" ]]; then
-    mv "$OLD_CONFIG" "$OLD_BACKUP"
+    cp -Ra "$OLD_CONFIG" "$OLD_BACKUP"
 fi
 
 # set new config
-cp -R "$NEW_CONFIG" "$OLD_CONFIG"
+cp -Ra --update=all "$NEW_CONFIG" "$HOME"

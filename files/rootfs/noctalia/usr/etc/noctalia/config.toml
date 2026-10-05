@@ -22,8 +22,8 @@ enabled         = false
 
 [include]
 files = [
-    "/usr/share/noctalia/config/shell.toml",
-    "/usr/share/noctalia/config/bar.toml",
-    "/usr/share/noctalia/config/dock.toml",
-    "/usr/share/noctalia/config/theme.toml",
+    "/etc/noctalia/config.d/shell.toml",
+    "/etc/noctalia/config.d/bar.toml",
+    "/etc/noctalia/config.d/dock.toml",
+    "/etc/noctalia/config.d/theme.toml",
 ]

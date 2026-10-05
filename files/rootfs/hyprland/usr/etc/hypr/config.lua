@@ -354,4 +354,4 @@ hl.window_rule({
 ---- CONFIG.D ----
 ------------------
 
-require("/usr/share/hypr/config.d/*.lua")
+require("/etc/hypr/config.d/*.lua")
