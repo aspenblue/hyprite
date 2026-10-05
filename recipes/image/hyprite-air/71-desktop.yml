@@ -41,7 +41,7 @@ modules:
         # -                           # Архивы
 
         # Tools        
-        - elementary-fonts          # Шрифты
+        # -                           # Шрифты
         # -                           # RDP
         - gucharmap                 # Символы
         - gparted                   # Разметка дисков
@@ -85,5 +85,3 @@ modules:
 
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
-
-          
