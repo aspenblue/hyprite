@@ -43,7 +43,7 @@ floating_offset          = 8          # px gap between a floating panel and the 
 [shell.launcher]
 categories      = false  # show launcher category filters; Tab toggles them while open
 # show_icons      = true   # show application icons in launcher results
-show_app_origin_indicator = false # show package origin indicators on application results
+show_app_origin_indicator = true # show package origin indicators on application results
 # compact         = false  # smaller icons and tighter rows; hides subtitles
 app_grid        = true  # icon grid with labels underneath when results are apps only
 # show_app_actions = false  # include searchable .desktop actions alongside applications
