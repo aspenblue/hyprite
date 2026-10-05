@@ -23,8 +23,10 @@ modules:
       packages:
 
         # Tools
+        - nautilus
         - gnome-disk-utility        # Разметка дисков
         - btrfs-assistant           # Snapper
+        - dmenu-wayland
       
 
   # -----------------------------------------------

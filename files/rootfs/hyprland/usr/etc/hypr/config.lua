@@ -25,8 +25,7 @@
 ---------------------
 
 -- Set programs that you use
-local terminal    = "foot"
-local fileManager = "thunar"
+local fileManager = "nautilus"
 local menu        = "hyprlauncher"
 
 
