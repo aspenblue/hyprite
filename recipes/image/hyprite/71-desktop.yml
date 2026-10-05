@@ -34,6 +34,7 @@ modules:
           - org.gnome.Calculator          # Калькулятор
           - org.gnome.TextEditor          # Блокнот
           - org.gnome.clocks              # Часы и будильник
+          - org.gnome.Calendar            # Календарь
 
           # Media
           - io.bassi.Amberol              # Музыка

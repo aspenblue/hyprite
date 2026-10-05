@@ -4,6 +4,29 @@
 modules:
 
   # -----------------------------------------------
+  # Elementary repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - garaevdi/pantheon-rpm
+
+
+  # -----------------------------------------------
+  # Elementary flatpak repository
+  # -----------------------------------------------
+
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        repo:
+          url: https://flatpak.elementary.io/repo.flatpakrepo
+          name: elementary
+          title: elementary AppCenter    
+
+
+  # -----------------------------------------------
   # Desktop packages
   # -----------------------------------------------
 
@@ -14,30 +37,17 @@ modules:
 
         # Basic
         - elementary-files          # Файлы
+        - elementary-files-portal
         # -                           # Архивы
-        - elementary-calculator     # Калькулятор
-        - elementary-calendar       # Календарь
-        - elementary-code           # Блокнот
-        # -                         # Часы и будильник
 
-        # Media
-        - elementary-photos         # Изображения
-        - elementary-videos         # Видео
-        - elementary-camera         # Камера
-
-        # Office
-        # -                           # PDF, DJVu
-
-        # Web
-        - webapp-manager            # Веб-приложения
-
-        # Tools
-        - gucharmap                 # Символы
+        # Tools        
         - elementary-fonts          # Шрифты
         # -                           # RDP
+        - gucharmap                 # Символы
         - gparted                   # Разметка дисков
         # -                           # Использование диска         
         - btrfs-assistant           # Snapper
+        - dmenu-wayland
       
 
   # -----------------------------------------------
@@ -50,15 +60,30 @@ modules:
         scope: system
         install:
 
+          # Basic
+          - io.elementary.calculator      # Калькулятор
+          - io.elementary.code            # Блокнот
+          # -                             # Часы и будильник
+          - io.elementary.calendar        # Календарь
+
           # Media
+          - io.elementary.photos          # Изображения
+          - io.elementary.videos          # Видео
+          - io.elementary.camera          # Камера
+          - io.elementary.music           # Музыка
           - io.bassi.Amberol              # Музыка
 
           # Office
+          # -                               # PDF, DJVu
           - org.onlyoffice.desktopeditors # Офис
 
           # Web
+          - org.pvermeer.WebAppHub        # Веб-приложения
           - org.mozilla.firefox           # Браузер
+          - io.elementary.mail            # Почта
           - com.getmailspring.Mailspring  # Почта
 
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
+
+          
