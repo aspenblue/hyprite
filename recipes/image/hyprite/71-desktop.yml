@@ -4,16 +4,6 @@
 modules:
 
   # -----------------------------------------------
-  # WebApp-manager repository
-  # -----------------------------------------------
-
-  - type: dnf
-    repos:
-      copr:
-        - refi64/webapp-manager
-
-
-  # -----------------------------------------------
   # Desktop packages
   # -----------------------------------------------
 
@@ -24,7 +14,7 @@ modules:
 
         # Tools
         - nautilus
-        - gnome-disk-utility        # Разметка дисков
+        - gparted                   # Разметка дисков
         - btrfs-assistant           # Snapper
         - dmenu-wayland
       
@@ -40,7 +30,6 @@ modules:
         install:
 
           # Basic
-          - org.gnome.Nautilus            # Файлы
           - org.gnome.FileRoller          # Архивы
           - org.gnome.Calculator          # Калькулятор
           - org.gnome.TextEditor          # Блокнот

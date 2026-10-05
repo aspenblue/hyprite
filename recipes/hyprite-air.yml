@@ -3,7 +3,7 @@
 
 version: 1
 
-name: hyprite
+name: hyprite-air
 
 description: "Personal Fedora Atomic image based on Universal Blue, with Hyprland, Noctalia and Noctalia Greeter."
 
@@ -18,7 +18,7 @@ modules:
   - from-file: image/hyprite/62-noctalia.yml
   - from-file: image/hyprite/63-noctalia-hyprland-connector.yml
   - from-file: image/hyprite/64-noctaliagreeter.yml
-  - from-file: image/hyprite/71-desktop.yml
+  - from-file: image/hyprite-air/71-desktop.yml
   - from-file: common/90-post.yml
 
 

@@ -34,8 +34,27 @@ jobs:
 
     steps:
 
-      - name: Checkout
-        uses: actions/checkout@v4
+      # Основной репозиторий
+      - name: Checkout Hyprite
+        uses: actions/checkout@v7
+
+      # Общий репозиторий
+      - name: Checkout Common
+        uses: actions/checkout@v7
+        with:
+          repository: aspenblue/common
+          ref: main
+          path: tmp/common
+
+      # Кладём общие recipes туда, где BlueBuild их ожидает
+      - name: Install common recipes
+        run: |
+          cp -a tmp/common/recipes/* recipes/
+
+      # Кладём общие files
+      - name: Install common files
+        run: |
+          cp -a tmp/common/files/* files/
 
       - name: Build image
         uses: blue-build/github-action@v1
