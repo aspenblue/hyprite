@@ -7,20 +7,16 @@ name: hyprite
 
 description: "Personal Fedora Atomic image based on Universal Blue, with Hyprland, Noctalia and Noctalia Greeter."
 
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/aspenblue/base
 image-version: latest
 
 modules:
 
-  - from-file: common/20-system.yml
-  - from-file: common/30-apps.yml
   - from-file: images/hyprite/61-hyprland.yml
   - from-file: images/hyprite/62-noctalia.yml
   - from-file: images/hyprite/63-noctalia-hyprland-connector.yml
   - from-file: images/hyprite/64-noctaliagreeter.yml
   - from-file: images/hyprite/71-desktop.yml  
-  - from-file: common/80-cleanup.yml
-  - from-file: images/hyprite/81-cleanupdesktop.yml
 
 
   # -----------------------------------------------
