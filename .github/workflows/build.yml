@@ -43,19 +43,19 @@ jobs:
       - name: Checkout Common
         uses: actions/checkout@v7
         with:
-          repository: aspenblue/common
+          repository: aspenblue/base
           ref: main
-          path: tmp/common
+          path: tmp/base
 
       # Кладём общие recipes туда, где BlueBuild их ожидает
       - name: Install common recipes
         run: |
-          cp -a --update=none tmp/common/recipes/* recipes/
+          cp -a --update=none tmp/base/recipes/* recipes/
 
       # Кладём общие files
       - name: Install common files
         run: |
-          cp -a --update=none tmp/common/files/* files/
+          cp -a --update=none tmp/base/files/* files/
 
       - name: Build image
         uses: blue-build/github-action@v1
