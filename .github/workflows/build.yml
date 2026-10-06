@@ -55,7 +55,7 @@ jobs:
       # Кладём общие files
       - name: Install common files
         run: |
-          cp -a tmp/common/files/* files/
+          cp -a --update=none tmp/common/files/* files/
 
       - name: Build image
         uses: blue-build/github-action@v1
