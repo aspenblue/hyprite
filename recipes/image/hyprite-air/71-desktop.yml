@@ -73,7 +73,7 @@ modules:
         scope: system
         repo:
           url: https://flatpak.elementary.io/repo.flatpakrepo
-          name: appcenter
+          name: elementary
           title: elementary AppCenter
         install:
 
