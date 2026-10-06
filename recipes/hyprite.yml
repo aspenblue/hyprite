@@ -16,8 +16,9 @@ modules:
   - from-file: common/30-apps.yml
   - from-file: image/hyprite/61-hyprland.yml
   - from-file: image/hyprite/62-noctalia.yml
-  - from-file: image/hyprite/63-noctalia-hyprland-connector.yml
-  - from-file: image/hyprite/64-noctaliagreeter.yml
+  - from-file: image/hyprite/63-noctaliagreeter.yml
+  - from-file: image/hyprite/65-noctalia-hyprland-connector.yml
+  - from-file: image/hyprite/66-noctalia-gnome-connector.yml
   - from-file: image/hyprite/71-desktop.yml
 
 

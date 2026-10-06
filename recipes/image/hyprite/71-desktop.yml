@@ -35,6 +35,9 @@ modules:
           - org.gnome.TextEditor          # Блокнот
           - org.gnome.clocks              # Часы и будильник
           - org.gnome.Calendar            # Календарь
+          # -                               # Задачи
+          # -                               # Иконки
+          - org.gnome.Maps                # Карты
 
           # Media
           - io.bassi.Amberol              # Музыка
@@ -46,10 +49,14 @@ modules:
           - org.gnome.Papers              # PDF, DJVu
           - org.onlyoffice.desktopeditors # Офис
 
+          # Code
+          # -                               # Редактор кода
+
           # Web
           - org.mozilla.firefox           # Браузер
           - com.getmailspring.Mailspring  # Почта
           - org.pvermeer.WebAppHub        # Веб-приложения
+          # -                               # Помощник авторизации wifi
 
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений

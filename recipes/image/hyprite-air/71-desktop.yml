@@ -23,17 +23,20 @@ modules:
       packages:
 
         # Basic
-        - elementary-files          # Файлы
+        - elementary-files              # Файлы
         - elementary-files-portal
-        # -                           # Архивы
+        # -                               # Архивы
+
+        # Code
+        - elementary.code               # Редактор кода
 
         # Tools        
-        # -                           # Шрифты
-        # -                           # RDP
-        - gucharmap                 # Символы
-        - gparted                   # Разметка дисков
-        # -                           # Использование диска         
-        - btrfs-assistant           # Snapper
+        # -                               # Шрифты
+        # -                               # RDP
+        - gucharmap                     # Символы
+        - gparted                       # Разметка дисков
+        # -                               # Использование диска         
+        - btrfs-assistant               # Snapper
         - dmenu-wayland
       
 
@@ -46,6 +49,10 @@ modules:
       - notify: true
         scope: system
         install:
+
+          # Basic
+          # -                               # Блокнот
+          # -                               # Часы и будильник
 
           # Media
           - io.bassi.Amberol              # Музыка
@@ -79,9 +86,10 @@ modules:
 
           # Basic
           - io.elementary.calculator//stable      # Калькулятор
-          - io.elementary.code//stable            # Блокнот
-          # -                             # Часы и будильник
           - io.elementary.calendar//stable        # Календарь
+          - io.elementary.tasks//stable           # Задачи
+          - io.elementary.iconbrowser//stable     # Иконки
+          - io.elementary.maps//stable            # Карты
 
           # Media
           - io.elementary.photos//stable          # Изображения
@@ -91,3 +99,4 @@ modules:
 
           # Web
           - io.elementary.mail//stable            # Почта
+          - io.elementary.capnet-assist//stable   # Помощник авторизации wifi
