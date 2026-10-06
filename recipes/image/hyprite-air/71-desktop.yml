@@ -30,6 +30,9 @@ modules:
         # Code
         - elementary-code               # Редактор кода
 
+        # Web
+        - elementary-mail               # Почта
+
         # Tools        
         # -                               # Шрифты
         # -                               # RDP
@@ -98,5 +101,5 @@ modules:
           - io.elementary.music//stable           # Музыка
 
           # Web
-          - io.elementary.mail//stable            # Почта
+          # - io.elementary.mail//stable            # Почта
           - io.elementary.capnet-assist//stable   # Помощник авторизации wifi
