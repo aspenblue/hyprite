@@ -19,7 +19,6 @@ modules:
   - from-file: image/hyprite/63-noctalia-hyprland-connector.yml
   - from-file: image/hyprite/64-noctaliagreeter.yml
   - from-file: image/hyprite/71-desktop.yml
-  - from-file: common/90-post.yml
 
 
   # -----------------------------------------------
