@@ -10,20 +10,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - garaevdi/pantheon-rpm
-
-
-  # -----------------------------------------------
-  # Elementary flatpak repository
-  # -----------------------------------------------
-
-  - type: default-flatpaks
-    configurations:
-      - scope: system
-        repo:
-          url: https://flatpak.elementary.io/repo.flatpakrepo
-          name: elementary
-          title: elementary AppCenter    
+        - garaevdi/pantheon-rpm  
 
 
   # -----------------------------------------------
@@ -60,6 +47,36 @@ modules:
         scope: system
         install:
 
+          # Media
+          - io.bassi.Amberol              # Музыка
+
+          # Office
+          # -                               # PDF, DJVu
+          - org.onlyoffice.desktopeditors # Офис
+
+          # Web
+          - org.pvermeer.WebAppHub        # Веб-приложения
+          - org.mozilla.firefox           # Браузер
+          - com.getmailspring.Mailspring  # Почта
+
+          # Apps
+          - io.github.kolunmi.Bazaar      # Магазин приложений
+
+  
+  # -----------------------------------------------
+  # Elementary flatpaks
+  # -----------------------------------------------      
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        repo:
+          url: https://flatpak.elementary.io/repo.flatpakrepo
+          name: elementary
+          title: elementary AppCenter
+        install:
+
           # Basic
           - io.elementary.calculator      # Калькулятор
           - io.elementary.code            # Блокнот
@@ -71,17 +88,6 @@ modules:
           - io.elementary.videos          # Видео
           - io.elementary.camera          # Камера
           - io.elementary.music           # Музыка
-          - io.bassi.Amberol              # Музыка
-
-          # Office
-          # -                               # PDF, DJVu
-          - org.onlyoffice.desktopeditors # Офис
 
           # Web
-          - org.pvermeer.WebAppHub        # Веб-приложения
-          - org.mozilla.firefox           # Браузер
           - io.elementary.mail            # Почта
-          - com.getmailspring.Mailspring  # Почта
-
-          # Apps
-          - io.github.kolunmi.Bazaar      # Магазин приложений
