@@ -18,7 +18,7 @@ modules:
   - from-file: 60-shell/common/noctalia.yml
   - from-file: 60-shell/common/noctaliagreeter.yml
   - from-file: 60-shell/hyprite/noctalia-hyprland-connector.yml
-  - from-file: 70-desktop/common/desktop.yml
+  - from-file: 70-desktop/common/apps.yml
   - from-file: 70-desktop/common/foot.yml
   - from-file: 70-desktop/common/pantheon-desktop.yml
   - from-file: 70-desktop/common/pantheon-noctalia-connector.yml

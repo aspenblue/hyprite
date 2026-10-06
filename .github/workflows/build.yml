@@ -50,7 +50,7 @@ jobs:
       # Кладём общие recipes туда, где BlueBuild их ожидает
       - name: Install common recipes
         run: |
-          cp -a tmp/common/recipes/* recipes/
+          cp -a --update=none tmp/common/recipes/* recipes/
 
       # Кладём общие files
       - name: Install common files
