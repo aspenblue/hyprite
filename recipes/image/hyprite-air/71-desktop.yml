@@ -62,6 +62,13 @@ modules:
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
 
+  
+  # -----------------------------------------------
+  # Elementary flatpaks
+  # -----------------------------------------------      
+
+  - type: default-flatpaks
+    configurations:
       - notify: true
         scope: system
         repo:
@@ -71,16 +78,16 @@ modules:
         install:
 
           # Basic
-          - io.elementary.calculator      # Калькулятор
-          - io.elementary.code            # Блокнот
+          - io.elementary.calculator//stable      # Калькулятор
+          - io.elementary.code//stable            # Блокнот
           # -                             # Часы и будильник
-          - io.elementary.calendar        # Календарь
+          - io.elementary.calendar//stable        # Календарь
 
           # Media
-          - io.elementary.photos          # Изображения
-          - io.elementary.videos          # Видео
-          - io.elementary.camera          # Камера
-          - io.elementary.music           # Музыка
+          - io.elementary.photos//stable          # Изображения
+          - io.elementary.videos//stable          # Видео
+          - io.elementary.camera//stable          # Камера
+          - io.elementary.music//stable           # Музыка
 
           # Web
-          - io.elementary.mail            # Почта
+          - io.elementary.mail//stable            # Почта
