@@ -1,7 +1,0 @@
-
-[include]
-files = [
-    "/etc/noctalia/config.toml",
-    "/etc/noctalia/config.d/lowperf.toml",
-#    "/etc/noctalia/config.d/highperf.toml",
-]

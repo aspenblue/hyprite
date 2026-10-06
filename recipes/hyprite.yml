@@ -12,14 +12,16 @@ image-version: latest
 
 modules:
 
-  - from-file: common/20-system.yml
-  - from-file: common/30-apps.yml
-  - from-file: image/hyprite/61-hyprland.yml
-  - from-file: image/hyprite/62-noctalia.yml
-  - from-file: image/hyprite/63-noctaliagreeter.yml
-  - from-file: image/hyprite/65-noctalia-hyprland-connector.yml
-  - from-file: image/hyprite/66-noctalia-gnome-connector.yml
-  - from-file: image/hyprite/71-desktop.yml
+  - from-file: 20-system/common/system.yml
+  - from-file: 30-apps/common/apps.yml
+  - from-file: 60-shell/hyprite/hyprland.yml
+  - from-file: 60-shell/common/noctalia.yml
+  - from-file: 60-shell/common/noctaliagreeter.yml
+  - from-file: 60-shell/hyprite/noctalia-hyprland-connector.yml
+  - from-file: 70-desktop/common/desktop.yml
+  - from-file: 70-desktop/common/foot.yml
+  - from-file: 70-desktop/common/gnome-desktop.yml
+  - from-file: 70-desktop/common/gnome-noctalia-connector.yml
 
 
   # -----------------------------------------------
