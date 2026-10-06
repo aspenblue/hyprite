@@ -28,7 +28,7 @@ modules:
         # -                               # Архивы
 
         # Code
-        - elementary.code               # Редактор кода
+        - elementary-code               # Редактор кода
 
         # Tools        
         # -                               # Шрифты
