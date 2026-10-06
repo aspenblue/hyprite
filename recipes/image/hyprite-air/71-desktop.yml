@@ -62,18 +62,11 @@ modules:
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
 
-  
-  # -----------------------------------------------
-  # Elementary flatpaks
-  # -----------------------------------------------      
-
-  - type: default-flatpaks
-    configurations:
       - notify: true
         scope: system
         repo:
           url: https://flatpak.elementary.io/repo.flatpakrepo
-          name: elementary
+          name: appcenter
           title: elementary AppCenter
         install:
 
