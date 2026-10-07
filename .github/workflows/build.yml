@@ -26,7 +26,6 @@ jobs:
           - hyprite
           - hyprite-air
 #          - hyprite-plus
-#          - hyprite-mint
 
     name: Build ${{ matrix.recipe }}
     runs-on: ubuntu-latest
