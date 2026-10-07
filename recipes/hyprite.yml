@@ -20,8 +20,8 @@ modules:
   - from-file: 60-shell/hyprite/noctalia-hyprland-connector.yml
   - from-file: 70-desktop/common/apps.yml
   - from-file: 70-desktop/common/foot.yml
-  - from-file: 70-desktop/common/gnome-desktop.yml
-  - from-file: 70-desktop/common/gnome-noctalia-connector.yml
+  - from-file: 70-desktop/common/default/gnome-desktop.yml
+  - from-file: 70-desktop/common/default/gnome-noctalia-connector.yml
 
 
   # -----------------------------------------------
