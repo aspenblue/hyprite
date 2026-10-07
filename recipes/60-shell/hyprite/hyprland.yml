@@ -44,6 +44,8 @@ modules:
 
         - dmenu-wayland  
 
+        - gnome-keyring             # Keyring
+
 
   # -----------------------------------------------
   # Hyprland - configuration
