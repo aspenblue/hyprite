@@ -9,5 +9,5 @@ modules:
 
   - type: files
     files:
-      - source: rootfs/mintn-hyprland-connector
+      - source: rootfs/mint-hyprland-connector
         destination: /
