@@ -26,7 +26,7 @@ modules:
         - hyprpicker
         - hypridle
         - hyprlock
-        # - hyprpolkitagent
+        # - hyprpolkitagent             # noctalia polkit agent used
         - hyprland-guiutils
 
         # Hyprland support components
