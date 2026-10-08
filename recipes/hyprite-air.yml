@@ -19,8 +19,8 @@ modules:
   - from-file: 60-shell/common/noctaliagreeter.yml
   - from-file: 60-shell/hyprite/noctalia-hyprland-connector.yml
   - from-file: 70-desktop/common/apps.yml
-  - from-file: 70-desktop/common/lite/mate-desktop.yml
-  - from-file: 70-desktop/common/lite/mate-noctalia-connector.yml
+  - from-file: 70-desktop/common/lite/mint-desktop.yml
+  - from-file: 70-desktop/common/lite/mint-noctalia-connector.yml
   - from-file: 70-desktop/hyprite/mint-hyprland-connector.yml
 
 
