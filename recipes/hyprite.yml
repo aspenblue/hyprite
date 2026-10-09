@@ -21,8 +21,8 @@ modules:
   - from-file: 70-desktop/common/apps.yml
   - from-file: 70-desktop/common/foot.yml
   - from-file: 70-desktop/common/gnome/gnome-desktop.yml
-  #- from-file: 70-desktop/common/gnome/gnome-noctalia-connector.yml
-  - from-file: 70-desktop/hyprite/gnome-hyprland-connector.yml
+  - from-file: 70-desktop/common/gnome/gnome-noctalia-connector.yml
+  #- from-file: 70-desktop/hyprite/gnome-hyprland-connector.yml
 
 
   # -----------------------------------------------
