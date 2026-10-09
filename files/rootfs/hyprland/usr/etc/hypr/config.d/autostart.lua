@@ -16,6 +16,5 @@
 --
 hl.on("hyprland.start", function ()
    hl.exec_cmd("hypridle")
-   hl.exec_cmd("/usr/libexec/hyprpolkitagent")
-   hl.exec_cmd("noctalia")
+   hl.exec_cmd("foot")
 end)

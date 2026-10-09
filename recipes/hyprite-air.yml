@@ -19,9 +19,10 @@ modules:
   - from-file: 60-shell/common/noctaliagreeter.yml
   - from-file: 60-shell/hyprite/noctalia-hyprland-connector.yml
   - from-file: 70-desktop/common/apps.yml
-  - from-file: 70-desktop/common/air/xfce-desktop.yml
-  - from-file: 70-desktop/common/air/xfce-noctalia-connector.yml
-  - from-file: 70-desktop/hyprite/xfce-hyprland-connector.yml
+  - from-file: 70-desktop/common/foot.yml
+  - from-file: 70-desktop/common/pantheon/pantheon-desktop.yml
+  #- from-file: 70-desktop/common/pantheon/pantheon-noctalia-connector.yml
+  - from-file: 70-desktop/hyprite/pantheon-hyprland-connector.yml
 
 
   # -----------------------------------------------
