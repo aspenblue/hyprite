@@ -21,8 +21,8 @@ modules:
   - from-file: 70-desktop/common/apps.yml
   - from-file: 70-desktop/common/foot.yml
   - from-file: 70-desktop/common/xfce/xfce-desktop.yml
-  #- from-file: 70-desktop/common/xfce/xfce-noctalia-connector.yml
-  - from-file: 70-desktop/hyprite/xfce-hyprland-connector.yml
+  - from-file: 70-desktop/common/xfce/xfce-noctalia-connector.yml
+  #- from-file: 70-desktop/hyprite/xfce-hyprland-connector.yml
 
 
   # -----------------------------------------------

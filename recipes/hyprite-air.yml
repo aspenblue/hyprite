@@ -21,8 +21,8 @@ modules:
   - from-file: 70-desktop/common/apps.yml
   - from-file: 70-desktop/common/foot.yml
   - from-file: 70-desktop/common/pantheon/pantheon-desktop.yml
-  #- from-file: 70-desktop/common/pantheon/pantheon-noctalia-connector.yml
-  - from-file: 70-desktop/hyprite/pantheon-hyprland-connector.yml
+  - from-file: 70-desktop/common/pantheon/pantheon-noctalia-connector.yml
+  #- from-file: 70-desktop/hyprite/pantheon-hyprland-connector.yml
 
 
   # -----------------------------------------------
